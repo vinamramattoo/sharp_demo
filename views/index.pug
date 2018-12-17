@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to sharp
+
+  form(action='/',method='post', enctype='multipart/form-data')
+    input(type='file',name='imageUpload')
+    input(type='submit',name='upload',value='Upload')
